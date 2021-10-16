@@ -1,0 +1,41 @@
+/* need a background image
+	maybe an image with a bunch of pills lying around
+		can I change the opacity of it or dull it out if i can't find one already like that
+
+	I can create a css image for the central box
+	I can use bootstrap 
+	I'll have to make sure the box is the right size for the text that will be going in it
+		there will need to be some flexibility to make sure the different lengths of things will all fit*/
+
+
+
+/*background image - https://images.unsplash.com/photo-1471864190281-a93a3070b6de?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=*/
+/* maybe this for changing the opacity of the background:
+	filter: alpha(Opacity=90);
+	opacity: 0.9;
+
+*/
+
+.main {
+	background-image: url("https://images.unsplash.com/photo-1471864190281-a93a3070b6de");
+	background-size: cover;
+}
+
+.overlay {
+	background: rgba(0,0,0,0.7);
+	height: 808px;
+}
+
+.box {
+	position: relative;
+	display: block;
+	margin: auto;
+	margin-top: 10%;
+	width: 700px;
+	height: 500px;
+	padding: 20px;
+	background: linear-gradient(to bottom right, rgba(214,214,214,0.8), rgba(255,255,255,0.5));
+	box-shadow: 4px 10px 12px -2px rgba(28, 28, 28, 0.7);
+	border-radius: 50px;
+	border: 5px solid rgba(142,0,0,0.7);
+}

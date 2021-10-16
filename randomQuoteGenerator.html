@@ -1,0 +1,44 @@
+<!-- Random Quote Machine
+objective:
+	build a codepen.io app that is functionally similar to the provided link
+	fulfill the below user stories
+		use whichever libraries or api's you need
+		give it your own personal style
+
+	user story: I can click a button to shoe me a new random quote
+	user story: I can press a button to tweet out a quote -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>PharMadLibs</title>
+	<!-- <script src="https://use.fontawesome.com/77dbf2a2c3.js"></script> -->  <!-- font awesome embed code -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="randomQuoteGenerator.css">
+</head>
+<body>
+	<div class="main">
+		<div class="overlay">
+			<!-- this will be the main body -->
+			<div class="container">
+				<div class="box">
+					<!-- this could be the box that holds the generator -->
+					<h1 class="drug-name">drugs</h1>
+					<p>is used to treat <span id="severity"></span> <span id="condition"></span></p>
+					<h4>Common Side Effects Include:</h4>
+					<p id="common-side-effects"></p>
+					<p><strong>Contact your doctor immediately if you experience any of the following as they may be signs of a potentially serious or fatal condition: </strong><span id="emergency-conditions"></span></p>
+					<p><strong>Avoid taking <span class="drug-name"></span> if you are allergic to <span class="drug-name"></span>, or if you are taking <span id="other-drug-name">other drug name</span>, as this may cause a sudden, unsafe drop in blood pressure.</strong></p>
+					<h2>Ask your doctor if <span class="drug-name"></span> is right for you!</h2>
+					<button id="button" class="btn btn-primary"><i class="fa fa-medkit fa-2x" aria-hidden="true"> Next</i></button>
+					<button class="btn btn-primary"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="randomQuoteGenerator.js"></script>
+</body>
+</html>
